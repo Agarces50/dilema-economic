@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>El dilema dels diners!!!</title>
+    <style>
+        body {
+            max-width: 30rem;
+            margin: 0 auto;
+        }
+
+        .text {
+            background-color: rgb(139, 61, 211);
+            padding: 2em;
+            margin-bottom: 2em;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Benvingut al dilema económic!</h1>
+    </header>
+
+    <main>
+        <header>
+            <div>Pagina</div>
+        </header>
+        <section class="text">Text</section>
+        <footer>
+            <button onclick="ferSi()">Sí</button>
+            <button onclick="ferNo()">No</button>
+        </footer>
+    </main>
+
+    <script>
+        const historia = [
+            {
+                text: " tens pasta? ",
+                si: 1,
+                no: 2,
+                nombre :'pepe'
+            },
+            {
+                text: "felicitats, em  dones?",
+                si: 3,
+                no: 4,
+            },
+            {
+                text: "quina pena, en vols?",
+                si: 3,
+                no: 4,
+            },
+            {
+                text: "Moltes gràcies",
+                si: 4,
+                no: 5,
+            },
+            { text: "Adeu!", si: -1, no: -1 },
+        ];
+        let pagina = 0;
+        let text = document.querySelector('.text');
+        text.textContent = historia[pagina].text;
+
+        function ferSi() {
+            pagina = historia[pagina].si;
+            text.textContent = historia[pagina].text;
+
+        }
+        function ferNo() {
+            pagina = historia[pagina].no;
+            text.textContent = historia[pagina].text;
+        }
+    </script>
+
+</body>
+
+</html>
