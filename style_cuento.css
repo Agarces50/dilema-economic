@@ -1,0 +1,58 @@
+.botoncsssi{
+  background-color: #00e74d3f;
+  border:5px;;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 20px;
+
+}
+.botoncssno {
+
+  background-color: #00e74d3f; 
+  border: 5px;;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 20px;
+
+
+
+}
+
+.textcss {
+  background-color: rgb(255, 79, 9);
+  padding: 2em;
+  margin-bottom: 2em;
+  font-size: 75px;
+  color: black;
+}
+
+body {
+  max-width: 30rem;
+  margin: 0 auto;
+  background-image: url("cervezas-juntas.jpg");
+}
+
+h1{
+background-color: blue;
+
+
+}
+
+
+
+h2{
+  background-color: #da4307; 
+  border: 5px;;
+  color: rgb(255, 255, 255);
+  
+
+}
+
+
+

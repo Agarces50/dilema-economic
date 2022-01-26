@@ -2,20 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="style_cuento.css">
     <title>El dilema dels diners!!!</title>
-    <style>
-        body {
-            max-width: 30rem;
-            margin: 0 auto;
-        }
-
-        .text {
-            background-color: rgb(139, 61, 211);
-            padding: 2em;
-            margin-bottom: 2em;
-            font-size: x-large;
-        }
-    </style>
 </head>
 
 <body>
@@ -25,12 +13,15 @@
 
     <main>
         <header>
-            <div>Pagina</div>
+                <h2 class="sumatoriopagina">
+                    
+                </h2>
         </header>
-        <section class="text">Text</section>
+        <section class="textcss">Text</section>
+
         <footer>
-            <button onclick="ferSi()">Sí</button>
-            <button onclick="ferNo()">No</button>
+            <button class="botoncsssi" onclick="ferSi()">Sí</button>
+            <button class="botoncssno" onclick="ferNo()">No</button>
         </footer>
     </main>
 
@@ -40,7 +31,7 @@
                 text: " tens pasta? ",
                 si: 1,
                 no: 2,
-                nombre :'pepe'
+                
             },
             {
                 text: "felicitats, em  dones?",
@@ -52,25 +43,36 @@
                 si: 3,
                 no: 4,
             },
-            {
-                text: "Moltes gràcies",
+    
+              {  text: "Moltes gràcies",
                 si: 4,
                 no: 5,
             },
+
             { text: "Adeu!", si: -1, no: -1 },
         ];
         let pagina = 0;
-        let text = document.querySelector('.text');
+        let nom = prompt("com et dius?");
+        alert("hola " + nom);
+
+
+        let text = document.querySelector('.textcss');
         text.textContent = historia[pagina].text;
+
+        let numPage = document.querySelector(".sumatoriopagina");
+        numPage .textContent='Página: ' + pagina;
 
         function ferSi() {
             pagina = historia[pagina].si;
             text.textContent = historia[pagina].text;
-
+            let numPage  = document.querySelector(".sumatoriopagina");
+            numPage .textContent="Página " + pagina;
         }
         function ferNo() {
             pagina = historia[pagina].no;
             text.textContent = historia[pagina].text;
+            let numPage  = document.querySelector(".sumatoriopagina");
+            numPage .textContent="Página " + pagina;
         }
     </script>
 
